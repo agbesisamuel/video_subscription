@@ -40,6 +40,17 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 # DATABASES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'isk_video_subscription',
+#         'USER': 'postgres',
+#         'PASSWORD': 'rekoll',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#         'ATOMIC_REQUESTS':True
+# }
 DATABASES = {"default": env.db("DATABASE_URL")}
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
@@ -75,7 +86,10 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+    "isk_video_subscription.content.apps.ContentConfig",
     "isk_video_subscription.users.apps.UsersConfig",
+ 
+
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
