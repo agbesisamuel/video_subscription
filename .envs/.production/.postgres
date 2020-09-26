@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=isk_video_subscription
+POSTGRES_USER=vMJTJvSPKDfxkHGdcexTKzdJZQfnMZeE
+POSTGRES_PASSWORD=vRyloRA5B0KR0DhI1P6nsPwqVnEcwQjuGlcJwuULDOM0rsFnXvEZ3UEYqzssxX1Z
